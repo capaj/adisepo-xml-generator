@@ -1,0 +1,32 @@
+payer:
+  firstName: Pepa
+  lastName: ZDepa
+  street: Nádražní
+  streetNr: 1
+  streetOrientationNumber: 1
+  postalNumber: 10100
+  cityName: Praha 1
+  state: ČESKÁ REPUBLIKA
+  email: pepa@mailinator.com
+  taxId: 8901011234
+  mobile: 606123456
+
+office: # ids of the tax office you're submiting to. Best to look it up in one of your previous xml files you have submitted
+  ufo: 461
+  pracufo: 3002
+
+vies:
+  quantityOfInvoices: 3
+  vat: 222222222
+  state: DE
+
+tax:
+  refund: 21 # how much you paid in tax that you want the office to return to you
+  refundBase: 100 # what was amount without tax that you paid for goods and services in that quarter
+  year: 2030
+  quarter: 1
+
+fakturoid: # info found in `Uživatelský účet` section in fakturoid, so for example https://app.fakturoid.cz/pepazdepa/user
+  accountName: 'pepazdepa'
+  email: 'pepa@mailinator.com'
+  apiToken: 'YOURAPITOKENFound'

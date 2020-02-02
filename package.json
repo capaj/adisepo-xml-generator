@@ -1,0 +1,33 @@
+{
+  "name": "adisepo-xml-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "quarterly": "ts-node getFromFakturoidAndGenerate.ts",
+    "generate": "ts-node generateXMLs.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^3.13.1",
+    "moment": "^2.24.0",
+    "mustache": "^4.0.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5",
+    "unirest": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^3.12.2",
+    "@types/mustache": "^4.0.0",
+    "@types/node": "^13.7.0",
+    "husky": "^4.2.1",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pisemnost nazevSW="EPO MF ČR" verzeSW="40.29.5">
+    <DPHKH1 verzePis="03.01">
+        <VetaD dokument="KH1" k_uladis="DPH" rok="{{tax.year}}" ctvrt="{{tax.quarter}}" d_poddp="{{currentDayInCzechFormat}}" khdph_forma="B" />
+        <VetaP c_orient="{{payer.streetOrientationNumber}}" c_pop="{{payer.streetNr}}" c_telef="{{payer.mobile}}" c_ufo="{{office.ufo}}" c_pracufo="{{office.pracufo}}" dic="{{payer.taxId}}" email="{{payer.email}}" jmeno="{{payer.firstName}}" naz_obce="{{payer.cityName}}" prijmeni="{{payer.lastName}}" psc="{{payer.postalNumber}}" stat="{{payer.state}}" typ_ds="F" ulice="{{payer.street}}" />
+        <VetaB3 zakl_dane1="{{tax.refundBase}}" dan1="{{tax.refund}}" />
+        <VetaC obrat23="0" pln23="{{tax.refundBase}}" celk_zd_a2="0" />
+    </DPHKH1>
+</Pisemnost>

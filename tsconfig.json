@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "outDir": "dist",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "strict": true,
+    "inlineSources": true,
+    "types": ["node"],
+    "forceConsistentCasingInFileNames": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "noUnusedParameters": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
+    "allowUnreachableCode": false,
+    "allowJs": true,
+    "downlevelIteration": true,
+    "jsx": "react",
+    "preserveConstEnums": true,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    ".git",
+    "**/*.spec.js",
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/build/**",
+    "./node_modules/*"
+  ]
+}
