@@ -16,14 +16,14 @@ currently there are two commands:
 
 - generate - creates XML files that you need to submit to your tax office
 
-So if you want to use this, you want to start by duplicating `sample-input.yaml` and filling out the values for you last quarter.
+So if you want to use this, you want to start by duplicating `sample-input.yaml` as `input.yaml` and filling out a few values for your last quarter.
 Then just use `generate` and submit the resulting XMLs on [adis](https://adisepo.mfcr.cz/adistc/adis/idpr_epo/epo2/uvod/vstup_expert.faces). Just make sure to recheck the values. This software is untested, provided as-is.
 
 ## FAQ
 
-### Why not just use fakturoid or idoklad?
+### Why not just use fakturoid or idoklad to get your XMLs?
 
-These only offer exporting XMLs when you pay for them. I only have one or two invoices per month and it feels weird paying for a service that I barely use when a simple script like this provides almost the same kind of
+These only offer exporting XMLs when you pay for them. I only have one or two invoices per month and it feels weird paying for a service that I barely use when a simple script like this provides almost the same kind of convenience with a free fakturoid account.
 
 ### Future plans
 
