@@ -10,11 +10,11 @@ I am using fakturoid for my invoices, so the script that get's the total for the
 
 ## How to use
 
-currently there are two commands:
+Obviously clone and install node modules. Then there are two commands you can run:
 
-- quarterly - this invokes fakturoid API with values in input.yaml and gets you a total for the last X invoices. Then it generated XML files same as if you would invoke it yourself
+- `quarterly` - this invokes fakturoid API with values in input.yaml and gets you a total for the last X invoices. Then it generated XML files same as if you would invoke it yourself
 
-- generate - creates XML files that you need to submit to your tax office
+- `generate` - creates XML files that you need to submit to your tax office
 
 So if you want to use this, you want to start by duplicating `sample-input.yaml` as `input.yaml` and filling out a few values for your last quarter.
 Then just use `generate` and submit the resulting XMLs on [adis](https://adisepo.mfcr.cz/adistc/adis/idpr_epo/epo2/uvod/vstup_expert.faces). Just make sure to recheck the values. This software is untested, provided as-is.
