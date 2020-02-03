@@ -27,4 +27,4 @@ These only offer exporting XMLs when you pay for them. I only have one or two in
 
 ### Future plans
 
-I am tempted to add `submit` command which would use puppeteer to submit the xml files for you os that the whole submission could happen without a single user click.
+I am tempted to add `submit` command which would use puppeteer to submit the xml files for you on adisepo that the whole submission happens without leaving the terminal.
