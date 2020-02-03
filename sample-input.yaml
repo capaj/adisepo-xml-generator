@@ -16,9 +16,9 @@ office: # ids of the tax office you're submiting to. Best to look it up in one o
   pracufo: 3002
 
 vies:
-  quantityOfInvoices: 3
-  vat: 222222222
-  state: DE
+  quantityOfInvoices: 3 # how many invoices you issued in the last quarter
+  vat: 222222222 # VAT ID of the single company you have send invoices to
+  state: DE # state code where the company resides
 
 tax:
   refund: 21 # how much you paid in tax that you want the office to return to you
