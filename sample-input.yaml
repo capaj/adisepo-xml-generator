@@ -3,7 +3,7 @@ payer:
   lastName: ZDepa
   street: Nádražní
   streetNr: 1
-  streetOrientationNumber: 1
+  streetOrientationNumber: 11 # keep blank if you don't have one
   postalNumber: 10100
   cityName: Praha 1
   state: ČESKÁ REPUBLIKA

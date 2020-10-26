@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Pisemnost nazevSW="EPO MF ČR" verzeSW="40.29.5">
+<Pisemnost nazevSW="EPO MF ČR" verzeSW="41.10.6">
     <DPHDP3 verzePis="01.02">
         <VetaD c_okec="620100" ctvrt="{{tax.quarter}}" d_poddp="{{currentDayInCzechFormat}}" dapdph_forma="B" dokument="DP3" k_uladis="DPH" rok="{{tax.year}}" trans="A" typ_platce="P" />
-        <VetaP c_orient="{{payer.streetOrientationNumber}}" c_pop="{{payer.streetNr}}" c_telef="{{payer.mobile}}" c_ufo="{{office.ufo}}" c_pracufo="{{office.pracufo}}" dic="{{payer.taxId}}" email="{{payer.email}}" jmeno="{{payer.firstName}}" naz_obce="{{payer.cityName}}" prijmeni="{{payer.lastName}}" psc="{{payer.postalNumber}}" stat="{{payer.state}}" typ_ds="F" ulice="{{payer.street}}" />
+        <VetaP{{#payer.streetOrientationNumber}}
+                c_orient="{{payer.streetOrientationNumber}}" 
+                {{/payer.streetOrientationNumber}} c_pop="{{payer.streetNr}}" c_telef="{{payer.mobile}}" c_ufo="{{office.ufo}}" c_pracufo="{{office.pracufo}}" dic="{{payer.taxId}}" email="{{payer.email}}" jmeno="{{payer.firstName}}" naz_obce="{{payer.cityName}}" prijmeni="{{payer.lastName}}" psc="{{payer.postalNumber}}" stat="{{payer.state}}" typ_ds="F" ulice="{{payer.street}}" />
         <Veta2 pln_sluzby="{{totalPerQuarter}}" />
         <Veta4 odp_sum_kr="0" odp_sum_nar="{{tax.refund}}" odp_tuz23_nar="{{tax.refund}}" pln23="{{tax.refundBase}}" />
         <Veta5 odp_uprav_kf="0" />

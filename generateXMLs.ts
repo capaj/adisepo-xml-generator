@@ -5,7 +5,7 @@ export const generateXMLs = async (values) => {
   const templates = ['DPHSHV', 'DP', 'KH']
 
   const timestamp = new Date().toISOString()
-  await fs.promises.mkdir(`./output/${timestamp}`)
+  await fs.promises.mkdir(`./output/${timestamp}`, { recursive: true })
   await Promise.all(
     templates.map(async (template) => {
       const tpl = await fs.promises.readFile(`./templates/${template}.xml`, {
