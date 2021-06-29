@@ -3,7 +3,7 @@ import yaml from 'js-yaml'
 import fs from 'fs'
 
 export const getTotalForLastXInvoices = async (numberOfInvoices: number) => {
-  const input = yaml.safeLoad(fs.readFileSync('./input.yaml', 'utf8'))
+  const input = yaml.load(fs.readFileSync('./input.yaml', 'utf8')) as any
 
   const { fakturoid } = input
   return unirest

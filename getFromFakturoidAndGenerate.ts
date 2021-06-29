@@ -6,7 +6,7 @@ import { getTotalForLastXInvoices } from './fakturoid'
 
 moment.locale('cs')
 ;(async () => {
-  const input = yaml.safeLoad(fs.readFileSync('./input.yaml', 'utf8'))
+  const input = yaml.load(fs.readFileSync('./input.yaml', 'utf8')) as any
 
   const sum = await getTotalForLastXInvoices(input.vies.quantityOfInvoices)
 

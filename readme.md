@@ -12,7 +12,7 @@ I am using fakturoid for my invoices, so the script that get's the total for the
 
 Obviously clone and install node modules. Then there are two commands you can run:
 
-- `quarterly` - this invokes fakturoid API with values in input.yaml and gets you a total for the last X invoices. Then it generated XML files same as if you would invoke it yourself
+- `quarterly` - this invokes fakturoid API with values in input.yaml and gets you a total for the last X invoices. Then it generates XML files same as if you would invoke it yourself
 
 - `generate` - creates XML files that you need to submit to your tax office
 

@@ -11,7 +11,7 @@ payer:
   taxId: 8901011234
   mobile: 606123456
 
-office: # ids of the tax office you're submiting to. Best to look it up in one of your previous xml files you have submitted
+office: # ids of the tax office you're submitting to. Best to look it up in one of your previous xml files you have submitted
   ufo: 461
   pracufo: 3002
 
