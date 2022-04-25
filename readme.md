@@ -2,11 +2,11 @@
 
 ## Use case and Motivation
 
-In Czech republic being a contractor requires you to submit 3 forms every month/quarter. It's a lot of manual chores, so I wanted to automate this boring task with a crude CLI tool hacked together in one day.
+In Czech republic being a contractor requires you to submit 3 complex forms every month/quarter. It's a lot of manual chores, so I wanted to automate this boring task with a crude CLI tool hacked together in one day.
 
-Note that this only makes sense to use if you have a very simple invoicing-just a few invoices per month to an EU country with reverse charge to a single company. For more complex scenarios you might be able to modify the scripts to fit your usecase, but don't expect it to work out of the box.
+Note that this only makes sense to use if you have a very simple invoicing-just a few invoices per month to a foreign country with reverse charge to a single company. For more complex scenarios you might be able to modify the scripts to fit your use case, but don't expect it to work out of the box.
 
-I am using fakturoid for my invoices, so the script that get's the total for the last X invoices hit's their API with one request.
+I am using fakturoid for my invoices, so the script that gets the total for the last X invoices hit's their API with one request.
 
 ## How to use
 

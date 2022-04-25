@@ -12,7 +12,7 @@ export const getTotalForLastXInvoices = async (numberOfInvoices: number) => {
     )
     .auth({
       user: fakturoid.email,
-      pass: fakturoid.apiToken
+      pass: fakturoid.apiToken,
     })
     .headers({
       'cache-control': 'no-cache',
@@ -21,23 +21,27 @@ export const getTotalForLastXInvoices = async (numberOfInvoices: number) => {
       Host: 'app.fakturoid.cz',
       'Cache-Control': 'no-cache',
       Accept: '*/*',
-      'User-Agent': 'Test (capajj@gmail.com)'
+      'User-Agent': 'Test (capajj@gmail.com)',
     })
     .send()
     .then(
       (res) => {
         const { body } = res
 
-        const lastThree = body.slice(0, numberOfInvoices)
+        const lastXInvoices = body.slice(0, numberOfInvoices)
+
         console.log(
-          lastThree.map(({ total }) => {
-            return total
+          lastXInvoices.map(({ native_total, paid_at, number }) => {
+            if (!paid_at) {
+              console.warn(`seems like invoice ${number} is not yet paid`)
+            }
+            return native_total
           })
         )
-        const sum = lastThree.reduce((sum, invoice) => {
-          return sum + Number(invoice.total)
+        const sum = lastXInvoices.reduce((sum, invoice) => {
+          return sum + Number(invoice.native_total)
         }, 0)
-        console.log(`sum of last ${numberOfInvoices} is ${sum}`)
+        console.log(`sum of last ${numberOfInvoices} is ${sum} CZK`)
         return sum
       },
       (err) => {

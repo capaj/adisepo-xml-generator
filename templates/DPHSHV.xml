@@ -2,8 +2,7 @@
 <Pisemnost nazevSW="EPO MF ČR" verzeSW="41.10.6">
     <DPHSHV verzePis="01.02">
         <VetaD k_uladis="DPH" dokument="SHV" ctvrt="{{tax.quarter}}" rok="{{tax.year}}" shvies_forma="R" d_poddp="{{currentDayInCzechFormat}}" />
-        <VetaP{{#payer.streetOrientationNumber}}
-                c_orient="{{payer.streetOrientationNumber}}" 
+        <VetaP{{#payer.streetOrientationNumber}} c_orient="{{payer.streetOrientationNumber}}" 
                 {{/payer.streetOrientationNumber}} c_pop="{{payer.streetNr}}" c_ufo="{{office.ufo}}" c_pracufo="{{office.pracufo}}" dic="{{payer.taxId}}" jmeno="{{payer.firstName}}" naz_obce="{{payer.cityName}}" prijmeni="{{payer.lastName}}" psc="{{payer.postalNumber}}" stat="{{payer.state}}" typ_ds="F" ulice="{{payer.street}}" />
         <VetaR por_c_stran="1" c_rad="1" k_stat="{{vies.state}}" c_vat="{{vies.vat}}" k_pln_eu="3" pln_pocet="{{vies.quantityOfInvoices}}" pln_hodnota="{{totalPerQuarter}}" />
     </DPHSHV>
