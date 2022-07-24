@@ -16,7 +16,6 @@ office: # ids of the tax office you're submitting to. Best to look it up in one 
   pracufo: 3002
 
 vies:
-  quantityOfInvoices: 3 # how many invoices you issued in the last quarter
   vat: 222222222 # VAT ID of the single company you have send invoices to
   state: DE # state code where the company resides
 
