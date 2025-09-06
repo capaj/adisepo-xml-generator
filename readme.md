@@ -1,3 +1,6 @@
+Deprecation notice: I built my own full featured fakturoid/uidoklad alternative here: [https://faktorio.cz/](https://github.com/capaj/faktorio)
+so this project will not receive any updates
+
 # adisepo-xml-generator
 
 ## Use case and Motivation
